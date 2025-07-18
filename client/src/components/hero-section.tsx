@@ -8,28 +8,28 @@ interface HeroSectionProps {
 export default function HeroSection({ type }: HeroSectionProps) {
   if (type === "teen") {
     return (
-      <section className="bg-gradient-to-br from-funngro-purple to-funngro-indigo text-white py-20">
+      <section className="gradient-modern text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="bg-funngro-orange text-white px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
-                As seen on Shark Tank India
+              <div className="bg-modern-accent text-gray-900 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
+                ⚡ As seen on Shark Tank India
               </div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                TEEN<span className="text-funngro-orange">LANCERS</span>
+                TEEN<span className="text-modern-accent">LANCERS</span>
               </h1>
-              <p className="text-xl md:text-2xl mb-4 text-purple-100">
+              <p className="text-xl md:text-2xl mb-4 text-white/90">
                 Real companies, real projects, real earnings and real money
               </p>
-              <p className="text-lg mb-8 text-purple-200">
+              <p className="text-lg mb-8 text-white/80">
                 Smart opportunities for the smart generation
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                <Button className="bg-funngro-orange hover:bg-orange-600 text-white px-8 py-3 text-lg">
+                <Button className="bg-modern-accent hover:bg-yellow-500 text-gray-900 px-8 py-3 text-lg font-semibold">
                   <Download className="mr-2 h-5 w-5" />
                   Download App
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-funngro-purple px-8 py-3 text-lg">
+                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-modern-primary px-8 py-3 text-lg">
                   Learn More
                 </Button>
               </div>
@@ -60,38 +60,38 @@ export default function HeroSection({ type }: HeroSectionProps) {
   }
   
   return (
-    <section className="bg-gradient-to-br from-funngro-indigo to-funngro-purple text-white py-20">
+    <section className="gradient-accent text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <div className="bg-funngro-orange text-white px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
-              As seen on Shark Tank India
+            <div className="bg-modern-accent text-gray-900 px-3 py-1 rounded-full text-sm font-semibold inline-block mb-4">
+              ⚡ As seen on Shark Tank India
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Smart <span className="text-funngro-orange">Talent</span> for smart companies
+              Smart <span className="text-modern-accent">Talent</span> for smart companies
             </h1>
-            <p className="text-xl md:text-2xl mb-4 text-indigo-100">
+            <p className="text-xl md:text-2xl mb-4 text-white/90">
               Cost effective, timely delivery, innovative ideas while you help the next generation
             </p>
-            <p className="text-lg mb-8 text-indigo-200">
+            <p className="text-lg mb-8 text-white/80">
               Talented teenagers for your company
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-6">
-              <Button className="bg-funngro-orange hover:bg-orange-600 text-white px-8 py-3 text-lg">
+              <Button className="bg-modern-accent hover:bg-yellow-500 text-gray-900 px-8 py-3 text-lg font-semibold">
                 Hire Teenlancer
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-funngro-indigo px-8 py-3 text-lg">
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg">
                 Talk to Us
               </Button>
             </div>
             <div className="mt-6">
-              <p className="text-sm text-indigo-200 mb-2">Popular:</p>
+              <p className="text-sm text-white/80 mb-2">Popular:</p>
               <div className="flex flex-wrap gap-2">
-                <span className="bg-indigo-700 px-3 py-1 rounded-full text-sm">Blogs</span>
-                <span className="bg-indigo-700 px-3 py-1 rounded-full text-sm">Social Media</span>
-                <span className="bg-indigo-700 px-3 py-1 rounded-full text-sm">Video Creation</span>
-                <span className="bg-indigo-700 px-3 py-1 rounded-full text-sm">Sales</span>
+                <span className="bg-white/20 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Blogs</span>
+                <span className="bg-white/20 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Social Media</span>
+                <span className="bg-white/20 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Video Creation</span>
+                <span className="bg-white/20 px-3 py-1 rounded-full text-sm backdrop-blur-sm">Sales</span>
               </div>
             </div>
           </div>

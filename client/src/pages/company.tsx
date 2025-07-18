@@ -79,10 +79,10 @@ export default function CompanyPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
-                    <span className="text-funngro-orange font-bold text-lg">{project.price}</span>
+                    <span className="text-modern-accent font-bold text-lg">{project.price}</span>
                   </div>
                   <p className="text-gray-600 mb-4">{project.description}</p>
-                  <Button className="bg-funngro-indigo hover:bg-indigo-700 text-white">
+                  <Button className="bg-modern-secondary hover:bg-sky-700 text-white">
                     Start Now <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </CardContent>
@@ -119,7 +119,7 @@ export default function CompanyPage() {
                       <p className="text-gray-600">{service.description}</p>
                     </div>
                   </div>
-                  <a href="#" className="text-funngro-indigo hover:text-indigo-700 font-semibold">
+                  <a href="#" className="text-modern-secondary hover:text-sky-700 font-semibold">
                     Sample projects →
                   </a>
                 </CardContent>
@@ -143,7 +143,7 @@ export default function CompanyPage() {
               
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="bg-funngro-orange text-white w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-modern-accent text-gray-900 w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
                     <Lightbulb className="w-5 h-5" />
                   </div>
                   <div>
@@ -155,7 +155,7 @@ export default function CompanyPage() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-funngro-emerald text-white w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="bg-modern-success text-white w-10 h-10 rounded-full flex items-center justify-center mr-4 mt-1">
                     <DollarSign className="w-5 h-5" />
                   </div>
                   <div>
@@ -168,10 +168,10 @@ export default function CompanyPage() {
               </div>
               
               <div className="flex gap-4 mt-8">
-                <Button className="bg-funngro-indigo hover:bg-indigo-700 text-white">
+                <Button className="bg-modern-secondary hover:bg-sky-700 text-white">
                   Start Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" className="border-funngro-indigo text-funngro-indigo hover:bg-indigo-50">
+                <Button variant="outline" className="border-modern-secondary text-modern-secondary hover:bg-sky-50">
                   Talk to Us
                 </Button>
               </div>
@@ -218,19 +218,19 @@ export default function CompanyPage() {
       <ContactForm type="company" />
       
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-funngro-indigo to-funngro-purple text-white">
+      <section className="py-16 gradient-accent text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to hire talented teenagers?
           </h2>
-          <p className="text-xl mb-8 text-indigo-100">
+          <p className="text-xl mb-8 text-white/90">
             Join thousands of companies who are already working with Funngro's talented teens
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-funngro-orange hover:bg-orange-600 text-white px-8 py-3 text-lg font-semibold">
+            <Button className="bg-modern-accent text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg font-semibold">
               Hire Teenlancer
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-funngro-indigo px-8 py-3 text-lg font-semibold">
+            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg font-semibold">
               Talk to Us
             </Button>
           </div>

@@ -27,31 +27,31 @@ export default function Navigation() {
           <div className="hidden md:flex space-x-8">
             <Link href="/teen">
               <span className={`font-semibold transition-colors cursor-pointer ${
-                isTeenPage ? "text-funngro-purple" : "text-gray-700 hover:text-funngro-purple"
+                isTeenPage ? "text-modern-primary" : "text-gray-700 hover:text-modern-primary"
               }`}>
                 For Teens
               </span>
             </Link>
             <Link href="/company">
               <span className={`font-semibold transition-colors cursor-pointer ${
-                isCompanyPage ? "text-funngro-purple" : "text-gray-700 hover:text-funngro-purple"
+                isCompanyPage ? "text-modern-primary" : "text-gray-700 hover:text-modern-primary"
               }`}>
                 For Companies
               </span>
             </Link>
-            <a href="#" className="text-gray-700 hover:text-funngro-purple font-semibold transition-colors">
+            <a href="#" className="text-gray-700 hover:text-modern-primary font-semibold transition-colors">
               About
             </a>
-            <a href="#" className="text-gray-700 hover:text-funngro-purple font-semibold transition-colors">
+            <a href="#" className="text-gray-700 hover:text-modern-primary font-semibold transition-colors">
               Blog
             </a>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-funngro-purple text-funngro-purple hover:bg-funngro-purple hover:text-white">
+            <Button variant="outline" className="border-modern-primary text-modern-primary hover:bg-modern-primary hover:text-white">
               Login
             </Button>
-            <Button className="bg-funngro-orange hover:bg-orange-600 text-white">
+            <Button className="bg-modern-secondary hover:bg-sky-600 text-white">
               Sign Up
             </Button>
           </div>
@@ -74,29 +74,29 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link href="/teen">
               <span className={`block px-3 py-2 font-semibold cursor-pointer ${
-                isTeenPage ? "text-funngro-purple" : "text-gray-700"
+                isTeenPage ? "text-modern-primary" : "text-gray-700"
               }`}>
                 For Teens
               </span>
             </Link>
             <Link href="/company">
               <span className={`block px-3 py-2 font-semibold cursor-pointer ${
-                isCompanyPage ? "text-funngro-purple" : "text-gray-700"
+                isCompanyPage ? "text-modern-primary" : "text-gray-700"
               }`}>
                 For Companies
               </span>
             </Link>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:text-funngro-purple">
+            <a href="#" className="block px-3 py-2 text-gray-700 hover:text-modern-primary">
               About
             </a>
-            <a href="#" className="block px-3 py-2 text-gray-700 hover:text-funngro-purple">
+            <a href="#" className="block px-3 py-2 text-gray-700 hover:text-modern-primary">
               Blog
             </a>
             <div className="px-3 py-2 space-y-2">
-              <Button variant="outline" className="w-full border-funngro-purple text-funngro-purple hover:bg-funngro-purple hover:text-white">
+              <Button variant="outline" className="w-full border-modern-primary text-modern-primary hover:bg-modern-primary hover:text-white">
                 Login
               </Button>
-              <Button className="w-full bg-funngro-orange hover:bg-orange-600 text-white">
+              <Button className="w-full bg-modern-secondary hover:bg-sky-600 text-white">
                 Sign Up
               </Button>
             </div>

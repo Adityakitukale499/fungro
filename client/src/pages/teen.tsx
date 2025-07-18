@@ -36,7 +36,7 @@ export default function TeenPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-funngro-purple text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-modern-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <DollarSign className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">First Income</h3>
@@ -44,7 +44,7 @@ export default function TeenPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-funngro-orange text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-modern-secondary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Passion</h3>
@@ -52,7 +52,7 @@ export default function TeenPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-funngro-emerald text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-modern-success text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Learning</h3>
@@ -60,7 +60,7 @@ export default function TeenPage() {
             </div>
             
             <div className="text-center">
-              <div className="bg-funngro-indigo text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-modern-accent text-gray-900 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Certification</h3>
@@ -129,19 +129,19 @@ export default function TeenPage() {
       <ContactForm type="teen" />
       
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-funngro-purple to-funngro-orange text-white">
+      <section className="py-16 gradient-modern text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             BE INDEPENDENT BEFORE 18!
           </h2>
-          <p className="text-xl mb-8 text-purple-100">
+          <p className="text-xl mb-8 text-white/90">
             Join thousands of teens who are already earning and learning with Funngro
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-funngro-purple hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+            <Button className="bg-modern-accent text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg font-semibold">
               Download App Now
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-funngro-purple px-8 py-3 text-lg font-semibold">
+            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-modern-primary px-8 py-3 text-lg font-semibold">
               Learn More
             </Button>
           </div>

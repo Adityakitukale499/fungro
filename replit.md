@@ -7,6 +7,8 @@ Funngro is a modern web application that connects talented teenagers with real c
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.
+Color theme: Modern purple-cyan-yellow gradient design (updated from original Funngro colors)
+Server requirement: Frontend-only application (no backend server needed)
 
 ## System Architecture
 

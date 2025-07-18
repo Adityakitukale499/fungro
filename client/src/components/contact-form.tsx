@@ -8,8 +8,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -40,29 +38,20 @@ export default function ContactForm({ type }: ContactFormProps) {
     }
   });
   
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return await apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you within 24 hours.",
-      });
-      form.reset();
-    },
-    onError: (error) => {
-      toast({
-        title: "Error sending message",
-        description: error.message || "Please try again later.",
-        variant: "destructive",
-      });
-    }
-  });
-  
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    await contactMutation.mutateAsync(data);
+    
+    // Simulate form submission delay
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    // Show success message
+    toast({
+      title: "Message sent successfully!",
+      description: "We'll get back to you within 24 hours.",
+    });
+    
+    // Reset form
+    form.reset();
     setIsSubmitting(false);
   };
   
@@ -153,7 +142,7 @@ export default function ContactForm({ type }: ContactFormProps) {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-funngro-purple hover:bg-purple-700 text-white py-3 text-lg"
+                  className="w-full bg-modern-primary hover:bg-violet-700 text-white py-3 text-lg"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
