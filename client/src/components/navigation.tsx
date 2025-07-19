@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import fungroIcon from "@/assets/fungro-icon.svg";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -17,7 +18,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/">
               <img 
-                src="https://cdn.prod.website-files.com/638b48215fd2fd34538fa6bc/638c80735fd2fd0810a24fba_funngro-logo.svg" 
+                src={fungroIcon} 
                 alt="Funngro Logo" 
                 className="h-8 w-auto cursor-pointer"
               />

@@ -248,7 +248,7 @@ export default function CompanyPage() {
             <Button className="bg-modern-accent text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg font-semibold">
               Hire Teenlancer
             </Button>
-            <Button variant="outline" className="border-2 border-white text-primary hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg font-semibold">
+            <Button variant="outline" className="border-2 border-white hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg font-semibold text-primary">
               Talk to Us
             </Button>
           </div>

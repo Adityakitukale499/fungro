@@ -81,7 +81,7 @@ export default function HeroSection({ type }: HeroSectionProps) {
                 Hire Teenlancer
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg">
+              <Button variant="outline" className="border-white text-primary hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg">
                 Talk to Us
               </Button>
             </div>
