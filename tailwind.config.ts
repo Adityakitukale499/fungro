@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       borderRadius: {
@@ -61,6 +61,13 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+        // Custom modern colors
+        "modern-primary": "var(--modern-primary)",
+        "modern-secondary": "var(--modern-secondary)",
+        "modern-accent": "var(--modern-accent)",
+        "modern-success": "var(--modern-success)",
+        "modern-warning": "var(--modern-warning)",
+        "modern-error": "var(--modern-error)",
       },
       keyframes: {
         "accordion-down": {

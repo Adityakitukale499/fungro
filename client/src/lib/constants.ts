@@ -59,37 +59,37 @@ export const PROJECT_CATEGORIES = [
   {
     title: "Social Media Marketing",
     description: "Manage social media pages of companies",
-    icon: "📱",
+    icon: "share-2",
     gradient: "from-purple-500 to-pink-500"
   },
   {
     title: "Video Creation",
     description: "Create and edit videos for companies",
-    icon: "🎬",
+    icon: "video",
     gradient: "from-orange-500 to-red-500"
   },
   {
     title: "Website Design",
     description: "Design and build websites for companies",
-    icon: "💻",
+    icon: "globe",
     gradient: "from-blue-500 to-cyan-500"
   },
   {
     title: "Content Writing",
     description: "Blogs, articles, website content and more",
-    icon: "✍️",
+    icon: "file-text",
     gradient: "from-green-500 to-teal-500"
   },
   {
     title: "Graphics Design",
     description: "Logos, brochures, pamphlets, website posts",
-    icon: "🎨",
+    icon: "palette",
     gradient: "from-indigo-500 to-purple-500"
   },
   {
     title: "Mobile App Development",
     description: "Develop market ready apps for companies",
-    icon: "📱",
+    icon: "smartphone",
     gradient: "from-pink-500 to-rose-500"
   }
 ];
@@ -128,31 +128,37 @@ export const PROJECT_IDEAS = [
   {
     title: "Build your brand",
     price: "₹2,000",
-    description: "Get your logos, brochure designed professionally - 5 Samples"
+    description: "Get your logos, brochure designed professionally - 5 Samples",
+    icon: "palette"
   },
   {
     title: "Customize your website",
     price: "₹5,000-₹15,000",
-    description: "Get a professional website designed to increase business growth"
+    description: "Get a professional website designed to increase business growth",
+    icon: "globe"
   },
   {
     title: "Reach more customers",
     price: "₹5,000",
-    description: "Get Teenlancers to manage your social media handles"
+    description: "Get Teenlancers to manage your social media handles",
+    icon: "share-2"
   },
   {
     title: "Share your message",
     price: "₹1,500",
-    description: "Voice over in 15 different languages"
+    description: "Voice over in 15 different languages",
+    icon: "mic"
   },
   {
     title: "Boost your growth",
     price: "₹5,000-₹10,000",
-    description: "Get 100s of Teenlancers to increase your reach through social media"
+    description: "Get 100s of Teenlancers to increase your reach through social media",
+    icon: "trending-up"
   },
   {
     title: "Engage your audience",
     price: "₹2,500",
-    description: "Create an explainer video for your company to get new customers"
+    description: "Create an explainer video for your company to get new customers",
+    icon: "video"
   }
 ];

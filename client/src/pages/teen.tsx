@@ -7,7 +7,17 @@ import ContactForm from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PROJECT_CATEGORIES, TEEN_FAQS, COMPANY_LOGOS } from "@/lib/constants";
-import { Heart, BookOpen, Award, DollarSign } from "lucide-react";
+import { Heart, BookOpen, Award, DollarSign, Share2, Video, Globe, FileText, Palette, Smartphone } from "lucide-react";
+
+// Icon mapping for project categories
+const categoryIconMap = {
+  "share-2": Share2,
+  video: Video,
+  globe: Globe,
+  "file-text": FileText,
+  palette: Palette,
+  smartphone: Smartphone
+};
 
 export default function TeenPage() {
   return (
@@ -83,17 +93,22 @@ export default function TeenPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PROJECT_CATEGORIES.map((category, index) => (
-              <Card key={index} className={`bg-gradient-to-br ${category.gradient} text-white hover:shadow-xl transition-shadow`}>
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    <span className="text-2xl mr-3">{category.icon}</span>
-                    <h3 className="text-xl font-semibold">{category.title}</h3>
-                  </div>
-                  <p className="text-white/90">{category.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+            {PROJECT_CATEGORIES.map((category, index) => {
+              const IconComponent = categoryIconMap[category.icon as keyof typeof categoryIconMap];
+              return (
+                <Card key={index} className={`bg-gradient-to-br ${category.gradient} text-white hover:shadow-xl transition-shadow`}>
+                  <CardContent className="p-6">
+                    <div className="flex items-center mb-4">
+                      <div className="bg-white/20 backdrop-blur-sm w-12 h-12 rounded-lg flex items-center justify-center mr-3">
+                        <IconComponent className="w-6 h-6" />
+                      </div>
+                      <h3 className="text-xl font-semibold">{category.title}</h3>
+                    </div>
+                    <p className="text-white/90">{category.description}</p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -141,7 +156,7 @@ export default function TeenPage() {
             <Button className="bg-modern-accent text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg font-semibold">
               Download App Now
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-modern-primary px-8 py-3 text-lg font-semibold">
+            <Button variant="outline" className="border-2 border-white text-primary hover:bg-white hover:text-modern-primary px-8 py-3 text-lg font-semibold">
               Learn More
             </Button>
           </div>

@@ -7,33 +7,43 @@ import ContactForm from "@/components/contact-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { PROJECT_IDEAS, COMPANY_FAQS, COMPANY_LOGOS } from "@/lib/constants";
-import { ArrowRight, Lightbulb, DollarSign, BarChart3, FileText, Palette, TestTube } from "lucide-react";
+import { ArrowRight, Lightbulb, DollarSign, BarChart3, FileText, Palette, TestTube, Mic, Search, Database, Globe, Share2, TrendingUp, Video } from "lucide-react";
+
+// Icon mapping for project ideas
+const iconMap = {
+  palette: Palette,
+  globe: Globe,
+  "share-2": Share2,
+  mic: Mic,
+  "trending-up": TrendingUp,
+  video: Video
+};
 
 export default function CompanyPage() {
   const services = [
     {
       title: "Research & Survey",
       description: "Run surveys and complete research assignments",
-      icon: <BarChart3 className="w-6 h-6" />,
-      color: "bg-funngro-purple"
+      icon: <Search className="w-6 h-6" />,
+      color: "bg-modern-primary"
     },
     {
       title: "Data Entry",
       description: "Create databases with data research skills",
-      icon: <FileText className="w-6 h-6" />,
-      color: "bg-funngro-orange"
+      icon: <Database className="w-6 h-6" />,
+      color: "bg-modern-secondary"
     },
     {
       title: "Voice Over",
       description: "Get content recorded with voice over artists",
-      icon: <TestTube className="w-6 h-6" />,
-      color: "bg-funngro-emerald"
+      icon: <Mic className="w-6 h-6" />,
+      color: "bg-modern-success"
     },
     {
       title: "Content Writing",
       description: "Blogs, articles, website content and more",
       icon: <FileText className="w-6 h-6" />,
-      color: "bg-funngro-indigo"
+      color: "bg-modern-warning"
     },
     {
       title: "Graphics Design",
@@ -45,7 +55,7 @@ export default function CompanyPage() {
       title: "Testing",
       description: "Get products tested and feedback on apps, websites",
       icon: <TestTube className="w-6 h-6" />,
-      color: "bg-red-500"
+      color: "bg-modern-error"
     }
   ];
   
@@ -74,20 +84,28 @@ export default function CompanyPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PROJECT_IDEAS.map((project, index) => (
-              <Card key={index} className="bg-white hover:shadow-xl transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
-                    <span className="text-modern-accent font-bold text-lg">{project.price}</span>
-                  </div>
-                  <p className="text-gray-600 mb-4">{project.description}</p>
-                  <Button className="bg-modern-secondary hover:bg-sky-700 text-white">
-                    Start Now <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
+            {PROJECT_IDEAS.map((project, index) => {
+              const IconComponent = iconMap[project.icon as keyof typeof iconMap];
+              return (
+                <Card key={index} className="bg-white hover:shadow-xl transition-shadow">
+                  <CardContent className="p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center">
+                        <div className="bg-modern-primary text-white w-10 h-10 rounded-lg flex items-center justify-center mr-3">
+                          <IconComponent className="w-5 h-5" />
+                        </div>
+                        <h3 className="text-xl font-semibold text-gray-900">{project.title}</h3>
+                      </div>
+                      <span className="text-modern-accent font-bold text-lg">{project.price}</span>
+                    </div>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <Button className="bg-modern-secondary hover:bg-sky-700 text-white">
+                      Start Now <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -171,7 +189,7 @@ export default function CompanyPage() {
                 <Button className="bg-modern-secondary hover:bg-sky-700 text-white">
                   Start Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
-                <Button variant="outline" className="border-modern-secondary text-modern-secondary hover:bg-sky-50">
+                <Button variant="outline" className="border-modern-secondary text-primary hover:bg-sky-50">
                   Talk to Us
                 </Button>
               </div>
@@ -189,13 +207,13 @@ export default function CompanyPage() {
       </section>
       
       {/* Trusted Companies Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 gradient-accent text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               We are trusted by
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-white">
               Hundreds of companies and partners working with Funngro to find smart talent
             </p>
           </div>
@@ -230,7 +248,7 @@ export default function CompanyPage() {
             <Button className="bg-modern-accent text-gray-900 hover:bg-yellow-500 px-8 py-3 text-lg font-semibold">
               Hire Teenlancer
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg font-semibold">
+            <Button variant="outline" className="border-2 border-white text-primary hover:bg-white hover:text-modern-secondary px-8 py-3 text-lg font-semibold">
               Talk to Us
             </Button>
           </div>

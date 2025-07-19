@@ -29,7 +29,7 @@ export default function HeroSection({ type }: HeroSectionProps) {
                   <Download className="mr-2 h-5 w-5" />
                   Download App
                 </Button>
-                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-modern-primary px-8 py-3 text-lg">
+                <Button variant="outline" className="border-white text-primary hover:bg-white hover:text-modern-primary px-8 py-3 text-lg">
                   Learn More
                 </Button>
               </div>
